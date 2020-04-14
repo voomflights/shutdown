@@ -1,2 +1,4 @@
-# shutdown
-A shutdown message to our loyal customers
+# Voom Flights Shutdown repository
+
+Thanks to HTML5 Boilerplate code.
+https://html5boilerplate.com/
