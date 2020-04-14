@@ -218,7 +218,7 @@ body {
 
 #logo {
   max-width: 150px;
-  padding-left: 5%;
+  padding-left: 160px;
   padding-top: 20px;
 }
 
@@ -249,7 +249,7 @@ body {
 
   #shutdown-blurb {
     border-radius: 401px;
-    padding: 20px 100px;
+    padding: 20px 65px;
     margin: 0 100px;
   }
 }
