@@ -236,7 +236,7 @@ body {
 }
 
 /* This is for the big screens */
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 55em) {
   #logo {
     padding-left: 160px;
   }
@@ -247,7 +247,6 @@ body {
     -moz-transform: translateX(-5%) translateY(-50%);
     -webkit-transform: translateX(-5%) translateY(-50%);
     transform: translateX(-5%) translateY(-50%);
-    max-width: 1600px;
   }
 
   #shutdown-blurb {
@@ -258,7 +257,7 @@ body {
 }
 
 /* This is for the small screens */
-@media only screen and (max-width: 52em) {
+@media only screen and (max-width: 55em) {
   #logo {
     padding-left: 25px;
   }
