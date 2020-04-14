@@ -216,12 +216,6 @@ body {
   background: url(/img/background-mobile.jpg) no-repeat center center fixed;
 }
 
-#logo {
-  max-width: 150px;
-  padding-left: 160px;
-  padding-top: 20px;
-}
-
 a {
   color: #54e197;
 }
@@ -235,8 +229,17 @@ body {
 .blurb {
   text-align: center;
 }
+
+#logo {
+  max-width: 150px;
+  padding-top: 20px;
+}
+
 /* This is for the big screens */
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 52em) {
+  #logo {
+    padding-left: 160px;
+  }
   .blurb {
     position: absolute;
     top: 50%;
@@ -255,7 +258,11 @@ body {
 }
 
 /* This is for the small screens */
-@media only screen and (max-width: 45em) {
+@media only screen and (max-width: 52em) {
+  #logo {
+    padding-left: 25px;
+  }
+
   .blurb {
     position: absolute;
     bottom: 0;
@@ -263,7 +270,7 @@ body {
   }
 
   #shutdown-blurb {
-    padding: 10% 25px;
+    padding: 25px;
     margin: 0px;
     /* position: absolute;
     bottom: 0;
