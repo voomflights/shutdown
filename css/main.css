@@ -187,39 +187,90 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  p#shutdown-blurb {
-    border-radius: 401px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
 
-  html {
-    background: url(/img/background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+/* @font-face {
+  font-family: "Montserrat";
+  src: url(/fonts/Montserrat-Light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+} */
+
+#shutdown-blurb {
+  font-size: 14px;
+  color: #000000;
+  background: #ffffff;
+}
+
+html {
+  background: url(/img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   background: #f2f2f2;
   background: url(/img/background-mobile.jpg) no-repeat center center fixed;
 }
 
-p#shutdown-blurb {
-  color: #000000;
-  background: #ffffff;
-  padding: 30px;
+#logo {
+  max-width: 150px;
+  padding-left: 5%;
+  padding-top: 20px;
 }
 
 a {
   color: #54e197;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.blurb {
+  text-align: center;
+}
+/* This is for the big screens */
+@media only screen and (min-width: 45em) {
+  .blurb {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -moz-transform: translateX(-5%) translateY(-50%);
+    -webkit-transform: translateX(-5%) translateY(-50%);
+    transform: translateX(-5%) translateY(-50%);
+    max-width: 1600px;
+  }
+
+  #shutdown-blurb {
+    border-radius: 401px;
+    padding: 20px 100px;
+    margin: 0 100px;
+  }
+}
+
+/* This is for the small screens */
+@media only screen and (max-width: 45em) {
+  .blurb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #shutdown-blurb {
+    padding: 10% 25px;
+    margin: 0px;
+    /* position: absolute;
+    bottom: 0;
+    -moz-transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); */
+  }
 }
 
 @media print,

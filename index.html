@@ -10,6 +10,11 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
+    <link
+      href="//fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
 
@@ -17,29 +22,36 @@
   </head>
 
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-    <img src="/img/logo.png" />
-    <!-- Add your site or application content here -->
-    <p id="shutdown-blurb">
-      Voom has permanently ceased operations. We are thankful to have had the
-      opportunity to transform how people move in some of the most congested
-      cities in the world. Read our CEO,
-      <a
-        href="https://acubed.airbus.com/blog/voom/closing-this-chapter-our-learnings-on-transforming-how-people-move/"
-        >Clément Monnet’s final blog post</a
-      >
-      on what we learned and why we made this difficult decision. For more
-      information on Airbus’s urban air mobility initiatives, please visit
-      <a href="https://www.airbus.com/innovation/urban-air-mobility.html"
-        >Airbus’s website</a
-      >.
-    </p>
+    <div class="box">
+      <!--[if IE]>
+        <p class="browserupgrade">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+          your experience and security.
+        </p>
+      <![endif]-->
+      <div class="row">
+        <img id="logo" src="/img/logo.png" />
+      </div>
+      <!-- Add your site or application content here -->
+      <div class="row blurb">
+        <p id="shutdown-blurb">
+          Voom has permanently ceased operations. We are thankful to have had
+          the opportunity to transform how people move in some of the most
+          congested cities in the world. Read our CEO,
+          <a
+            href="https://acubed.airbus.com/blog/voom/closing-this-chapter-our-learnings-on-transforming-how-people-move/"
+            >Clément Monnet’s final blog post</a
+          >
+          on what we learned and why we made this difficult decision. For more
+          information on Airbus’s urban air mobility initiatives, please visit
+          <a href="https://www.airbus.com/innovation/urban-air-mobility.html"
+            >Airbus’s website</a
+          >.
+        </p>
+      </div>
+      <div class="row footer"></div>
+    </div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
