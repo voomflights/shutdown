@@ -202,18 +202,14 @@ textarea {
   background: #ffffff;
 }
 
-html {
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f2f2f2;
   background: url(/img/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: #f2f2f2;
-  background: url(/img/background-mobile.jpg) no-repeat center center fixed;
 }
 
 a {
